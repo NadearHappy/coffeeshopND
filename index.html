@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ร้านกาแฟ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Itim&family=Spicy+Rice&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              100: '#582f0e',
+              200: '#7f4f24',
+              300: '#936639',
+              400: '#a68a64',
+              500: '#b6ad90',
+              600: '#c2c5aa',
+              700: '#a4ac86',
+              800: '#656d4a',
+              900: '#414833',
+              1000: '#333d29',
+            },
+            warning: {
+              'warn': '#ffff00',
+              'error':'#ff0000',
+              'serious':'#ff4433',
+            },
+            extra: {
+              aa: '#ede0d4',
+              bb: '#e6ccb2',
+              cc: '#ddb892',
+            }
+          },
+          fontFamily: {
+            'title': ['Spicy Rice'],
+            'content': ['Itim'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-extra-bb min-h-screen font-content flex flex-col">
+  <nav class="bg-extra-cc p-4 shadow-md">
+    <div class="flex items-center justify-between mx-4 md:mx-12">
+      <div class="flex items-center space-x-3">
+        <img src="image/Cafe Coffee Logo.png" alt="Logo" width="70">
+        <h1 class="text-2xl md:text-3xl font-title text-primary-1000">
+          Kornkamon Coffee Shop
+        </h1>
+      </div>
+    </div>
+  </nav>
+  <main class="flex-1">
+    <section class="container mx-auto mt-10 px-4 md:px-0">
+    <div class="bg-extra-aa rounded-2xl shadow-lg p-6 md:p-10 flex flex-col md:flex-row items-center gap-6">
+      <div class="flex-1">
+        <h2 class="text-3xl md:text-4xl font-title text-primary-1000 mb-4">
+          ยินดีต้อนรับสู่ร้าน Kornkamon Coffee Shop
+        </h2>
+        <p class="text-lg text-primary-100 mb-2">
+          ร้านกาแฟเล็กๆ บรรยากาศอบอุ่น อบอวลไปด้วยกลิ่นหอมผ่อนคลาย
+        </p>
+      </div>
+      <div class="flex-1 flex justify-center">
+        <img src="image/cafe.jpg" alt="Coffee Shop" class="rounded-2xl shadow-lg max-h-64 object-cover">
+      </div>
+    </div>
+    <section class="container mx-auto mt-10 px-4 md:px-0">
+    <div class="bg-extra-aa rounded-2xl shadow-lg p-6 md:p-10 flex flex-col md:flex-row items-center gap-6">
+      <div class="flex-1">
+        <h2 class="text-3xl md:text-4xl font-title text-primary-1000 mb-4">
+          !!!โปรโมชั่นพิเศษ มาคนเดียวรับฟรี ครัวซองต์ 1 ชิ้น!!! <br>
+          !!!โปรโมชั่นพิเศษ กินครบ 10 แก้ว รับฟรี Espresso 1 แก้ว!!!
+        </h2>
+      </div>
+  </section>
+    <section class="container mx-auto mt-10 px-4 md:px-0">
+      <h2 class="text-2xl md:text-3xl font-title text-primary-1000 mb-6 text-center">
+        เมนู
+      </h2>
+      <div class="flex justify-center">
+        <img src="image/menu coffee.jpg" alt="เมนูร้าน" width="500"
+             class="rounded-lg shadow-lg max-w-full md:max-w-3xl object-contain">
+      </div>
+    </section>
+<!-- สินค้าขายดี -->
+    <section class="container mx-auto mt-10 px-4 md:px-0">
+      <h2 class="text-2xl md:text-3xl font-title text-primary-1000 mb-6 text-center">
+        สินค้าขายดี
+      </h2>
+      <div class="flex justify-center flex-wrap gap-y-6 gap-x-6">
+        <!-- Best Seller 1 -->
+        <div class="max-w-sm bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+          <img src="image/americano.jpg" alt="Americano" class="w-full h-48 object-cover">
+          <div class="p-5 flex flex-col flex-1">
+            <h5 class="text-2xl font-bold">Americano</h5>
+            <p class="mt-1 text-primary-300">60 บาท</p>
+            <button class="mt-4 bg-primary-200 hover:bg-primary-100 text-white py-2 px-4 rounded w-full">
+              ซื้อ
+            </button>
+          </div>
+        </div>
+        <!-- Best Seller 2 -->
+        <div class="max-w-sm bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+          <img src="image/Cappuccino.jpg" alt="Cappuccino" class="w-full h-48 object-cover">
+          <div class="p-5 flex flex-col flex-1">
+            <h5 class="text-2xl font-bold">Cappuccino</h5>
+            <p class="mt-1 text-primary-300">90 บาท</p>
+            <button class="mt-4 bg-primary-200 hover:bg-primary-100 text-white py-2 px-4 rounded w-full">
+              ซื้อ
+            </button>
+          </div>
+        </div>
+        <!-- Best Seller 3 -->
+        <div class="max-w-sm bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+          <img src="image/Japanese Cake Roll.jpg" alt="Japanese Cake Roll" class="w-full h-48 object-cover">
+          <div class="p-5 flex flex-col flex-1">
+            <h5 class="text-2xl font-bold">Japanese Cake Roll</h5>
+            <p class="mt-1 text-primary-300">60 บาท</p>
+            <button class="mt-4 bg-primary-200 hover:bg-primary-100 text-white py-2 px-4 rounded w-full">
+              ซื้อ
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- เมนูทั้งหมด -->
+    <section id="products" class="container mx-auto mt-12 mb-10 px-4 md:px-0">
+      <h2 class="text-2xl md:text-3xl font-title text-primary-1000 mb-6 text-center">
+        เมนูทั้งหมด
+      </h2>
+      <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+        <!-- Product 1 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+          <img src="image/americano.jpg" alt="Americano" class="w-full h-48 object-cover">
+          <div class="p-5 flex flex-col flex-1">
+            <h5 class="text-2xl font-bold">Americano</h5>
+            <p>60 บาท</p>
+            <button class="mt-4 bg-primary-200 hover:bg-primary-100 text-white py-2 px-4 rounded w-full">
+              ซื้อ
+            </button>
+          </div>
+        </div>
+        <!-- Product 2 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+          <img src="image/Cappuccino.jpg" alt="Cappuccino" class="w-full h-48 object-cover">
+          <div class="p-5 flex flex-col flex-1">
+            <h5 class="text-2xl font-bold">Cappuccino</h5>
+            <p>90 บาท</p>
+            <button class="mt-4 bg-primary-200 hover:bg-primary-100 text-white py-2 px-4 rounded w-full">
+              ซื้อ
+            </button>
+          </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+          <img src="image/cat coffee.jpg" alt="Cat Coffee" class="w-full h-48 object-cover">
+          <div class="p-5 flex flex-col flex-1">
+            <h5 class="text-2xl font-bold">Cat Coffee</h5>
+            <p>300 บาท</p>
+            <button class="mt-4 bg-primary-200 hover:bg-primary-100 text-white py-2 px-4 rounded w-full">
+              ซื้อ
+            </button>
+          </div>
+        </div>
+        <!-- Product 4 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+          <img src="image/Chocolate Moka.jpg" alt="Chocolate Mocha" class="w-full h-48 object-cover">
+          <div class="p-5 flex flex-col flex-1">
+            <h5 class="text-2xl font-bold">Chocolate Mocha</h5>
+            <p>100 บาท</p>
+            <button class="mt-4 bg-primary-200 hover:bg-primary-100 text-white py-2 px-4 rounded w-full">
+              ซื้อ
+            </button>
+          </div>
+        </div>
+        <!-- Product 5 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+          <img src="image/Espresso.jpg" alt="Espresso" class="w-full h-48 object-cover">
+          <div class="p-5 flex flex-col flex-1">
+            <h5 class="text-2xl font-bold">Espresso</h5>
+            <p>40 บาท</p>
+            <button class="mt-4 bg-primary-200 hover:bg-primary-100 text-white py-2 px-4 rounded w-full">
+              ซื้อ
+            </button>
+          </div>
+        </div>
+        <!-- Product 6 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+          <img src="image/machiatto.jpg" alt="Macchiato" class="w-full h-48 object-cover">
+          <div class="p-5 flex flex-col flex-1">
+            <h5 class="text-2xl font-bold">Macchiato</h5>
+            <p>80 บาท</p>
+            <button class="mt-4 bg-primary-200 hover:bg-primary-100 text-white py-2 px-4 rounded w-full">
+              ซื้อ
+            </button>
+          </div>
+        </div>
+        <!-- Product 7 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+          <img src="image/latte and croissant.jpg" alt="Latte and Croissant" class="w-full h-48 object-cover">
+          <div class="p-5 flex flex-col flex-1">
+            <h5 class="text-2xl font-bold">Latte and Croissant</h5>
+            <p>125 บาท</p>
+            <button class="mt-4 bg-primary-200 hover:bg-primary-100 text-white py-2 px-4 rounded w-full">
+              ซื้อ
+            </button>
+          </div>
+        </div>
+        <!-- Product 8 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+          <img src="image/cake matcha.jpg" alt="Cake Matcha" class="w-full h-48 object-cover">
+          <div class="p-5 flex flex-col flex-1">
+            <h5 class="text-2xl font-bold">Cake Matcha</h5>
+            <p>80 บาท</p>
+            <button class="mt-4 bg-primary-200 hover:bg-primary-100 text-white py-2 px-4 rounded w-full">
+              ซื้อ
+            </button>
+          </div>
+        </div>
+        <!-- Product 9 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+          <img src="image/Japanese Cake Roll.jpg" alt="Japanese Cake Roll" class="w-full h-48 object-cover">
+          <div class="p-5 flex flex-col flex-1">
+            <h5 class="text-2xl font-bold">Japanese Cake Roll</h5>
+            <p>60 บาท</p>
+            <button class="mt-4 bg-primary-200 hover:bg-primary-100 text-white py-2 px-4 rounded w-full">
+              ซื้อ
+            </button>
+          </div>
+        </div>
+        <!-- Product 10 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+          <img src="image/macaroons.jpg" alt="Macaroons" class="w-full h-48 object-cover">
+          <div class="p-5 flex flex-col flex-1">
+            <h5 class="text-2xl font-bold">Macaroons</h5>
+            <p>45 บาท</p>
+            <button class="mt-4 bg-primary-200 hover:bg-primary-100 text-white py-2 px-4 rounded w-full">
+              ซื้อ
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-primary-1000 text-white py-6 mt-auto">
+    <div class="container mx-auto px-4 md:px-0 text-center text-sm leading-relaxed">
+      <p>123 ถนนกาแฟ ตำบลกาแฟ อำเภอเมือง จังหวัดนครปฐม 73000 ประเทศไทย</p>
+      <p>FB: kornkamoncoffee123</p>
+      <p>Line: @kkcoffee</p>
+      <p>โทร: 08x-xxx-xxxx | เปิดบริการทุกวัน 08:00 - 18:00 น.</p>
+    </div>
+  </footer>
+</body>
+</html>
